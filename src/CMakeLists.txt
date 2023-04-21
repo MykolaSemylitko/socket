@@ -1,0 +1,6 @@
+add_subdirectory(logger)
+add_subdirectory(utils)
+add_subdirectory(socket)
+add_subdirectory(server)
+add_subdirectory(client)
+add_subdirectory(bin)

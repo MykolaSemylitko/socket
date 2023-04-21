@@ -1,0 +1,6 @@
+add_library(socket socket.cpp)
+include_directories("${PROJECT_SOURCE_DIR}/lib/logger")
+include_directories("${PROJECT_SOURCE_DIR}/lib/utils")
+include_directories("${PROJECT_SOURCE_DIR}/lib/socket")
+target_link_libraries(socket PRIVATE logger)
+target_link_libraries(socket PRIVATE utils)

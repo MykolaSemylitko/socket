@@ -1,0 +1,8 @@
+add_library(server server.cpp)
+include_directories("${PROJECT_SOURCE_DIR}/lib/logger")
+include_directories("${PROJECT_SOURCE_DIR}/lib/utils")
+include_directories("${PROJECT_SOURCE_DIR}/lib/socket")
+include_directories("${PROJECT_SOURCE_DIR}/lib/server")
+target_link_libraries(server PRIVATE logger)
+target_link_libraries(server PRIVATE utils)
+target_link_libraries(server PRIVATE socket)
